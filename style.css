@@ -1,0 +1,164 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+.nav-todo {
+  width: 100%;
+  height: 5rem;
+  background-color: lightgray;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px,
+    rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+  background-color: rgba(127, 255, 212, 0.493);
+}
+
+.title {
+  margin-left: 3rem;
+  font-size: 1.5rem;
+  font-weight: bolder;
+}
+.nav-todo-add-btn {
+  background-color: aquamarine;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 3rem;
+  height: 3rem;
+  border-radius: 1.5em;
+  margin-right: 2rem;
+}
+.nav-todo-add-btn span {
+  color: #000000;
+  font-size: 4rem;
+}
+.list-cards {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  background-color: rgba(127, 255, 212, 0.493);
+}
+.list-cards-container {
+  width: 70%;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin-bottom: 4rem;
+}
+.card {
+  width: 15rem;
+  height: 20rem;
+  background-color: white;
+  margin-top: 2rem;
+  border-radius: 5px;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px,
+    #0000004d 0px 3px 7px -3px;
+  overflow: hidden;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  background-color: rgba(79, 255, 255, 0.336);
+}
+.card-head {
+  width: 100%;
+  height: 3rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: rgba(0, 255, 255, 0.425);
+}
+.card-head img {
+  width: 2rem;
+  height: 1rem;
+  cursor: pointer;
+  margin-right: 0.5rem;
+}
+.card-head span {
+  margin-left: 0.5rem;
+}
+.pitche {
+  width: 80%;
+  display: flex;
+  align-items: center;
+  margin-top: 1rem;
+  text-align: center;
+}
+.pitche span {
+  text-align: justify;
+  font-size: 0.95rem;
+}
+.popup-container {
+  width: 100%;
+  height: 95vh;
+  top: 5rem;
+  left: 0;
+  position: absolute;
+  display: none;
+  justify-content: center;
+  align-items: center;
+  z-index: 20;
+  background-color: transparent;
+}
+
+.popup {
+  width: 30rem;
+  height: 30rem;
+  border-radius: 1rem;
+  background-color: #d7caca;
+  box-shadow: 0 4px 8px 0 rgba(39, 93, 135, 0.2);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.popup-title {
+  font-size: 2rem;
+}
+
+.popup input {
+  width: 70%;
+  height: 2rem;
+  outline: none;
+  border-radius: 0.3rem;
+}
+
+.popup textarea {
+  width: 70%;
+  border-radius: 0.3rem;
+}
+
+.actions {
+  width: 70%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.create {
+  width: 10rem;
+  height: 2rem;
+  border-radius: 0.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #ffffff;
+  cursor: pointer;
+}
+
+.cancel {
+  width: 10rem;
+  height: 2rem;
+  border-radius: 0.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #ffffff;
+  cursor: pointer;
+}
+
+.cancel,
+.create {
+  font-weight: bold;
+  font-size: 1rem;
+}

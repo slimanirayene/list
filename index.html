@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>To do list</title>
+  </head>
+  <body>
+    <div class="nav-todo">
+      <span class="title">GOOGLE KEEP</span>
+      <div onclick="showPopup()" class="nav-todo-add-btn">
+        <span>+</span>
+      </div>
+    </div>
+    <div class="list-cards">
+      <div class="list-cards-container" id="notes"></div>
+    </div>
+    <div class="popup-container" id="popup">
+      <div class="popup">
+        <span class="popup-title">Add new note</span>
+        <input placeholder="Your note title" id="doctext" />
+        <textarea rows="10" id="docarea"></textarea>
+        <div class="actions">
+          <div onClick="createNote()" class="create">
+            <span>Create</span>
+          </div>
+          <div onClick="closePopup()" class="cancel">
+            <span>Cancel </span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="app.js"></script>
+  </body>
+</html>
